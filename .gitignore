@@ -1,2 +1,8 @@
 CMakeCache.txt
 CMakeFiles/
+CPackConfig.cmake
+CPackSourceConfig.cmake
+CTestTestfile.cmake
+Makefile
+DartConfiguration.tcl
+cmake_install.cmake
