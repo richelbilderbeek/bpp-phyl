@@ -16,4 +16,5 @@ install:
 
 script: 
   - cmake -DCMAKE_INSTALL_PREFIX=/home/travis/build/richelbilderbeek
-  - make
+  # - make 
+  - make install
