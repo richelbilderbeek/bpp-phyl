@@ -17,6 +17,7 @@ install:
   - cd bpp-core
   - cmake -DCMAKE_INSTALL_PREFIX=/home/travis/build/richelbilderbeek
   - make
+  - make install
   - cd ..
   - git clone https://github.com/richelbilderbeek/bpp-seq
   - cd bpp-seq
