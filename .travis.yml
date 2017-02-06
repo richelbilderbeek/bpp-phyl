@@ -23,7 +23,10 @@ install:
   - cd bpp-seq
   - cmake -DCMAKE_INSTALL_PREFIX=/home/travis/build/richelbilderbeek
   - make
+  - make install
   - cd ..
 
 script: 
-  - cmake -DCMAKE_INSTALL_PREFIX=/home/travis/build/richelbilderbeek/Bpp/bpp-phyl; make
+  - cmake -DCMAKE_INSTALL_PREFIX=/home/travis/build/richelbilderbeek
+  - make
+  - make install 
