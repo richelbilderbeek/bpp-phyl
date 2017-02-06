@@ -2,22 +2,21 @@
 
 cd ..
 
-mkdir Bpp
-
-cd Bpp
-
-
 if [ ! -d bpp-core ]; then
-  #git clone https://github.com/bioPP/bpp-core
   git clone https://github.com/richelbilderbeek/bpp-core
+  cd bpp-core
+  cmake -DCMAKE_INSTALL_PREFIX=/home/travis/build/richelbilderbeek
+  make
+  make install
+  cd ..
 fi
 
 if [ ! -d bpp-seq ]; then
   #git clone https://github.com/bioPP/bpp-seq
   git clone https://github.com/richelbilderbeek/bpp-seq
-fi
-
-if [ ! -d bpp-core ]; then
-  #git clone https://github.com/bioPP/bpp-core
-  git clone https://github.com/richelbilderbeek/bpp-pyl
+  cd bpp-seq
+  cmake -DCMAKE_INSTALL_PREFIX=/home/travis/build/richelbilderbeek
+  make
+  make install
+  cd ..
 fi
