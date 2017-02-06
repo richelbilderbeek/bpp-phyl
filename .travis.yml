@@ -15,5 +15,4 @@ install:
   - ./install_other_githubs
 
 script: 
-  - cd Bpp
   - cmake -DCMAKE_INSTALL_PREFIX=/home/travis/build/richelbilderbeek/Bpp/bpp-phyl; make install
